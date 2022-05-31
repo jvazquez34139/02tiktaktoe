@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<link>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TIC-TAC-TOE</title>
+    <!-- jquery link cdn -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- link icon styles -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/master.css">
+</head>
+<body>
+    <div class="menu">
+        <div id="start-game" class="menu-item">
+            <p  class="menu-item-title">New Game</p>
+        </div>
+        <div class="menu-item">
+            <p class="menu-item-title"><span>
+                <i class="fa fa-caret-down"></i>
+            </span> About <span>
+                <i class="fa fa-caret-down"></i>
+            </span></p>
+            <p class="menu-item-desc">
+                This is a simple Tic Tac Toe game. For two players. Made with HTML, CSS, and javascript.
+            </p>
+        </div>
+        <div class="menu-item">
+            <p class="menu-item-title">Contact</h4>
+            <p class="menu-item-desc">javazq25@gmail.com</>
+        </div>
+        <div id="expand-menu" class="menu-item">
+
+            <p  class="menu-item-title"><span class="fa fa-bars"></span></p>
+        </div>
+    </div>
+    <h2 id="current-player">Blue's Turn</h2>
+    <div class="game">
+        <div id="winner"></div>
+        <div class="game-board">
+            <div class="game-board-row">
+                <div class="game-board-cell xw x-cell">X</div>
+                <div class="game-board-cell gbcr gbcb"></div>
+                <div class="game-board-cell o-cell">O</div>
+            </div>
+            <div class="game-board-row">
+                <div class="game-board-cell o-cell">O</div>
+                <div class="game-board-cell xw x-cell">X</div>
+                <div class="game-board-cell x-cell">X</div>
+            </div>
+            <div class="game-board-row">
+                <div class="game-board-cell o-cell">O</div>
+                <div class="game-board-cell gbcr gbcb"></div>
+                <div class="game-board-cell xw x-cell">X</div>
+            </div>
+        </div>
+    </div>
+    <script type="module" src="js/app.js"></script>
+</body>
+</html>
